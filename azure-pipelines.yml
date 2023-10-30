@@ -5,6 +5,7 @@
 
 trigger:
 - main
+    batch: true
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
@@ -26,9 +27,7 @@ variables:
   pythonVersion: '3.7'
 
 stages:
-- stage: Build
-trigger:  
-    batch: true
+- stage: Build  
   displayName: Build stage
   jobs:
   - job: BuildJob
