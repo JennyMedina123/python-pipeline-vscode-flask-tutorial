@@ -4,8 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- batch
-- main
+  batch: true
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
