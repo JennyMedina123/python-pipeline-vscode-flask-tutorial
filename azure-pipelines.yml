@@ -27,6 +27,8 @@ variables:
 
 stages:
 - stage: Build
+trigger:  
+    batch: true
   displayName: Build stage
   jobs:
   - job: BuildJob
